@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-  *main - Entry point
+  *main- Entry point
   *
-  *Return: - Always 0 (success)
+  *Return: - Always 0 (sucess)
   */
 
 int main(void)
@@ -15,6 +15,14 @@ while (letter <= 'z')
 putchar(letter);
 letter++;
 }
+letter = 'A';
+
+while (letter <= 'Z')
+{
+putchar(letter);
+letter++;
+}
+
 putchar('\n');
 
 return (0);
