@@ -4,27 +4,28 @@
 
 /**
   *main - Entry point
+  *
   *Return: - Always 0 (success)
   */
 
 int main(void)
 {
-int d, p;
-for (d = 0; d < 9; d++)
+int i, j, k;
+for (int i = 0; i <= 7; i++)
 {
-for (p = d + 1; p <= '9'; p++)
+for (int j = i + 1; j <= 8; j++)
 {
-if (p != d)
+for (int k = j + 1; k <= 9; k++)
 {
-putchar(d);
-putchar(p);
-if (d == '8' && p == '9')
-continue;
-putchar('.');
+putchar(i + '0');
+putchar(j + '0');
+putchar(k + '0');
+if (i != 7 || j != 8 || k != 9)
+putchar(',');
 putchar(' ');
 }
 }
 }
-putchar('\n');
+}
 return (0);
 }
