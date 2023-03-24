@@ -2,15 +2,13 @@
 
 /**
  * print_line - check the code
- * @i: first variable
- * @n: second variable
+ * @n: number of times _ printed
  *
-Return: Always 0.
+ *Return: Always 0.
  */
 
 void print_line(int n)
 {
-int i;
 
 if (n <= 0)
 {
@@ -18,7 +16,10 @@ _putchar('\n');
 }
 else
 {
-for (i = 0; i < n; i++)
+
+int i;
+
+for (i = 1; i < n; i++)
 {
 _putchar('_');
 }
