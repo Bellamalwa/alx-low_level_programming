@@ -3,9 +3,9 @@
 
 /**
  * _strlen - takes string as input
- * returns length as integer
+ *
  * @s: integer
- * @length: integer 1
+ *
  *
  * Return: length
  */
