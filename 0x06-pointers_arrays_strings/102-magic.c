@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - add onr line to the code
+ * program prints a[2] = 98
+ * followed by new line
  *
  * Return: Always 0.
  */
