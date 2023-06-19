@@ -1,0 +1,126 @@
+#include <stdio.h>
+
+int _putchar(char c)
+{
+    printf("%c", c);
+    return (0);
+}
+
+int _islower(int c)
+{
+    if (c >= 'a' && c <= 'z')
+    {
+        return (1);
+    }
+    else
+    {
+        return (0);
+    }
+}
+
+int _isalpha(int c)
+{
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+    {
+        return (1);
+    }
+    else
+    {
+        return (0);
+    }
+}
+
+int _abs(int n)
+{
+    if (n < 0)
+    {
+        return (-n);
+    }
+    else
+    {
+        return (n);
+    }
+}
+
+int _isupper(int c)
+{
+    if (c >= 'A' && c <= 'Z')
+    {
+        return (1);
+    }
+    else
+    {
+        return (0);
+    }
+}
+
+int _isdigit(int c)
+{
+    if (c >= '0' && c <= '9')
+    {
+        return (1);
+    }
+    else
+    {
+        return (0);
+    }
+}
+
+int _strlen(char *s)
+{
+    int i;
+
+    for (i = 0; s[i] != '\0'; i++)
+    {
+        ;
+    }
+
+    return (i);
+}
+
+void _puts(char *s)
+{
+    int i;
+
+    for (i = 0; s[i] != '\0'; i++)
+    {
+        _putchar(s[i]);
+    }
+}
+
+char *_strcpy(char *dest, char *src)
+{
+    int i;
+
+    for (i = 0; src[i] != '\0'; i++)
+    {
+        dest[i] = src[i];
+    }
+
+    dest[i] = '\0';
+
+    return (dest);
+}
+
+int _atoi(char *s)
+{
+    int n = 0;
+    int i = 0;
+
+    while (s[i] != '\0')
+    {
+        if (s[i] >= '0' && s[i] <= '9')
+        {
+            n = n * 10 + (s[i] - '0');
+        }
+        else
+        {
+            break;
+        }
+
+        i++;
+}
+
+return (n);
+}
+
